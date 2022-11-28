@@ -30,7 +30,7 @@ func LoadConfigFromEnv() (Config, error) {
 	config.Latitude = env.Float64("LATITUDE", 0)
 	config.Longitude = env.Float64("LONGITUDE", 0)
 	config.LocationName = env.String("LOCATION_NAME", "")
-	config.TimeZone = env.String("TIME_ZONE", "UTC")
+	config.TimeZone = env.String("TIME_ZONE", "auto")
 	config.WeatherApiUrl = env.String("WEATHER_API_URL", "https://api.open-meteo.com/v1/forecast")
 
 	err := config.Validate()

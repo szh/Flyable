@@ -1,7 +1,11 @@
 package shared
 
+import "time"
+
 type Weather struct {
+	DateTime      time.Time
 	Temperature   int
+	FeelsLike     int
 	AvgWindSpeed  int
 	MaxWindSpeed  int
 	WindDirection string
